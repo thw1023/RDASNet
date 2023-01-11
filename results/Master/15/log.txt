@@ -1,0 +1,38 @@
+datasets/McM18/1.tif PSNR: 31.69261932373047
+Running complete in 2.4387s 
+datasets/McM18/10.tif PSNR: 36.00708770751953
+Running complete in 0.0934s 
+datasets/McM18/11.tif PSNR: 36.1541633605957
+Running complete in 0.0904s 
+datasets/McM18/12.tif PSNR: 37.45975875854492
+Running complete in 0.0904s 
+datasets/McM18/13.tif PSNR: 39.19149398803711
+Running complete in 0.0905s 
+datasets/McM18/14.tif PSNR: 36.73509216308594
+Running complete in 0.0903s 
+datasets/McM18/15.tif PSNR: 36.597381591796875
+Running complete in 0.0905s 
+datasets/McM18/16.tif PSNR: 32.87495040893555
+Running complete in 0.0904s 
+datasets/McM18/17.tif PSNR: 33.22746658325195
+Running complete in 0.0907s 
+datasets/McM18/18.tif PSNR: 34.03812026977539
+Running complete in 0.0909s 
+datasets/McM18/2.tif PSNR: 33.94892501831055
+Running complete in 0.0910s 
+datasets/McM18/3.tif PSNR: 33.358943939208984
+Running complete in 0.0917s 
+datasets/McM18/4.tif PSNR: 36.458133697509766
+Running complete in 0.0909s 
+datasets/McM18/5.tif PSNR: 34.35160446166992
+Running complete in 0.0907s 
+datasets/McM18/6.tif PSNR: 35.379425048828125
+Running complete in 0.0913s 
+datasets/McM18/7.tif PSNR: 33.67540740966797
+Running complete in 0.0906s 
+datasets/McM18/8.tif PSNR: 36.601776123046875
+Running complete in 0.0909s 
+datasets/McM18/9.tif PSNR: 35.99513626098633
+Running complete in 0.0907s 
+PSNR: 35.20819091796875
+
