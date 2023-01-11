@@ -9,7 +9,7 @@ import os
 import glob
 import time
 from nets.RDASNet import RDASNet
-from nets.my_model_4 import MODEL
+from nets.my_model_4 import MODEL # At begining, not change the model name
 from utils import denormalize, calc_psnr, calc_ssim
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
