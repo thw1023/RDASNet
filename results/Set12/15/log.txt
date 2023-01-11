@@ -1,0 +1,14 @@
+datasets/Set12/01.png PSNR: 32.7048
+datasets/Set12/02.png PSNR: 35.2718
+datasets/Set12/03.png PSNR: 33.4096
+datasets/Set12/04.png PSNR: 32.2561
+datasets/Set12/05.png PSNR: 33.1750
+datasets/Set12/06.png PSNR: 31.8527
+datasets/Set12/07.png PSNR: 31.9645
+datasets/Set12/08.png PSNR: 34.7419
+datasets/Set12/09.png PSNR: 32.7580
+datasets/Set12/10.png PSNR: 32.4783
+datasets/Set12/11.png PSNR: 32.4917
+datasets/Set12/12.png PSNR: 32.6290
+PSNR on test data 32.977764
+
