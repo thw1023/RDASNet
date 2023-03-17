@@ -6,6 +6,7 @@ import numpy as np
 import PIL.Image as pil_image
 import os
 
+
 def train(args):
     h5_file = h5py.File(args.output_path, 'w')
 
@@ -19,26 +20,27 @@ def train(args):
     patch_idx2 = 0
 
     for i, path in enumerate(image_list):
-        if args.Gray == True:
-            hr = pil_image.open(path).convert('L')
-            hr = np.expand_dims(hr, 2)
-        else:
-            hr = pil_image.open(path).convert('RGB')
-        hr = np.array(hr)
-        hr_group.create_dataset(str(patch_idx), data=hr)
-        print("input:", i, patch_idx, path, hr.shape)
-        patch_idx += 1
-
-    for j, path in enumerate(mask_list):
-        if args.Gray == True:
+        if args.Gray:
             lr = pil_image.open(path).convert('L')
             lr = np.expand_dims(lr, 2)
         else:
             lr = pil_image.open(path).convert('RGB')
         lr = np.array(lr)
-        lr_group.create_dataset(str(patch_idx2), data=lr)
+        lr_group.create_dataset(str(patch_idx), data=lr)
+        patch_idx += 1
+        print("input:", i, patch_idx, path, lr.shape)
+
+    for i, path in enumerate(mask_list):
+        if args.Gray:
+            hr = pil_image.open(path).convert('L')
+            hr = np.expand_dims(hr, 2)
+        else:  # CT images are color
+            hr = pil_image.open(path).convert('RGB')
+        hr = np.array(hr)
+        hr_group.create_dataset(str(patch_idx2), data=hr)
+        print("label:", i, patch_idx2, path, hr.shape)
         patch_idx2 += 1
-        print("label:", i, patch_idx, path)
+
     h5_file.close()
 
 
